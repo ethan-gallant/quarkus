@@ -33,7 +33,7 @@ public class SmallRyeGraphQLSubscriptionHandler extends SmallRyeGraphQLAbstractH
     private final ConcurrentHashMap<String, AtomicReference<Subscription>> subscriptionRefs = new ConcurrentHashMap<>();
 
     public SmallRyeGraphQLSubscriptionHandler(Config config, CurrentIdentityAssociation currentIdentityAssociation,
-                                              CurrentVertxRequest currentVertxRequest) {
+            CurrentVertxRequest currentVertxRequest) {
         super(currentIdentityAssociation, currentVertxRequest);
         this.config = config;
         this.executionErrorsService = new ExecutionErrorsService(config);
